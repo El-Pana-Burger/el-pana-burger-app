@@ -1,0 +1,8 @@
+{
+  "name": "El Pana Burger",
+  "description": "Aplicación oficial de El Pana Burger para pedir hamburguesas, perros y pepitos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
