@@ -45,11 +45,6 @@ function MainApp() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleFiltrarCategoriaYIrAlMenu = (cat: CategoriaTipo) => {
-    setCategoriaSeleccionada(cat);
-    navegarA('menu');
-  };
-
   return (
     <ScreenBackground>
       {/* App Navbar */}
@@ -65,7 +60,6 @@ function MainApp() {
           <HomeScreen
             onNavegar={navegarA}
             onSeleccionarProducto={handleSeleccionarProducto}
-            onFiltrarCategoria={handleFiltrarCategoriaYIrAlMenu}
           />
         )}
 

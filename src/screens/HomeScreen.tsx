@@ -3,13 +3,12 @@ import { Bike, ArrowRight } from 'lucide-react';
 import heroBurgerImg from '../assets/images/hero_burger.png';
 import { Logo } from '../components/Logo';
 import { PRODUCTOS } from '../data/products';
-import { Producto, CategoriaTipo } from '../types';
+import { Producto } from '../types';
 import { useOrders } from '../context/OrdersContext';
 
 interface HomeScreenProps {
   onNavegar: (pantalla: string) => void;
   onSeleccionarProducto?: (producto: Producto) => void;
-  onFiltrarCategoria?: (categoria: CategoriaTipo) => void;
 }
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({

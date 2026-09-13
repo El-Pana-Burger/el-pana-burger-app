@@ -16,7 +16,3 @@ export const TODAS_CATEGORIAS: CategoriaConfig[] = [
   { id: 'Acompañamientos', label: 'Papas & Más', icono: '🍟', descripcion: 'Crujientes y para compartir' },
   { id: 'Bebidas', label: 'Bebidas', icono: '🥤', descripcion: 'Refrescantes bien heladas' },
 ];
-
-export const CATEGORIAS_RAPIDAS: CategoriaConfig[] = TODAS_CATEGORIAS.filter(
-  c => c.id !== 'Todos'
-);
