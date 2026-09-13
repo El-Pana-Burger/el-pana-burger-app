@@ -88,6 +88,19 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         {/* Scrollable body */}
         <div className="overflow-y-auto max-h-[58vh] pr-1 py-3 space-y-4">
+          {/* Imagen destacada sin fondo si es Hamburguesa El Pana */}
+          {producto.id === 'hamburguesa-el-pana' && (
+            <div className="relative flex items-center justify-center py-1">
+              <div className="absolute inset-0 max-w-[160px] mx-auto bg-[#F7B63F]/20 rounded-full blur-xl pointer-events-none" />
+              <img
+                src="/hero_burger.png"
+                alt={producto.nombre}
+                referrerPolicy="no-referrer"
+                className="relative z-10 w-44 h-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.9)]"
+              />
+            </div>
+          )}
+
           {/* Descripción */}
           <p className="text-[#bbb] text-xs leading-relaxed">
             {producto.descripcion}
